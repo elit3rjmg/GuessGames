@@ -31,6 +31,7 @@ while count > 0:
         count -= 1
         print('You have',count,'chances')
         print('Try again\n')
+        
         if count >= 2:
             
             match word:
