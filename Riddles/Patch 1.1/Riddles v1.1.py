@@ -14,7 +14,7 @@ wordGuess = {
 
 
 wordList = list(wordGuess.keys())
-wordAns = list(wordGuess.values()) 
+wordAns = list(wordGuess.values()) #not used
 
 word = rd.choice(wordList)
 
@@ -62,4 +62,3 @@ if count == 0:
     
 else:
     print('YOU WIN')
- 
