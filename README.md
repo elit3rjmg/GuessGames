@@ -2,16 +2,12 @@
 Guessing games by RJ.
 This Game is in development. Expect a release soon :)
 
-# Riddles Patch 1.2
-Added:
-  New Riddles
-  Bug Fixes
+# Riddle Game:
+  Try to guess the answers of the given riddles. You run out of chances, you lose.
   
-# Riddles Patch 1.1
-Added: 
-  Hints (if guessed wrong 2 times in a row)
-  Bug FIxes
-
-# Riddles Game v1.0 release.
-First Pre-release of the small script game.
-Disclaimer: Game still in Development. 
+  Patch 1.1:
+    - Fixes
+    - Re-structured code
+  
+  Patch 1.2:
+  - New Riddles
