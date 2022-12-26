@@ -1,6 +1,5 @@
 # GuessGames
-Guessing games by RJ.
-This Game is in development. Expect a release soon :)
+Collection of Guessing games written in python.
 
 # Riddle Game:
   Try to guess the answers of the given riddles. You run out of chances, you lose.
