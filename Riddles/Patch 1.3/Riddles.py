@@ -93,8 +93,14 @@ while count > 0:
 
     else:
         pass
+
+    if count >= 2:
+        print('You have',count,'chance')
+    
+    else:
+        pass
      
-    ask = input('\nontinue playing?(Y/N): ').lower()
+    ask = input('\ncontinue playing?(Y/N): ').lower()
     if ask == 'y':
         continue
 
