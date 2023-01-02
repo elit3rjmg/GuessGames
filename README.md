@@ -10,3 +10,7 @@ Collection of Guessing games written in python.
   
   Patch 1.2:
   - New Riddles
+
+  Patch 1.3:
+  - Added Replay Features
+  - Point system
