@@ -75,6 +75,7 @@ while count > 0:
     if ask == wordGuess[word]:
         break
     
+    
     else:
         count -= 1
         print('You have',count,'chances')
