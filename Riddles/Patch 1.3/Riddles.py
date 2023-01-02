@@ -2,7 +2,7 @@ import random as rd
 
 class game:
     
-    def word(word):
+    def hint(word):
         match word:
                 case 'What has to be broken before you can use it?':
                     return 'Hint: Something you eat in breakfast'
@@ -65,30 +65,40 @@ wordGuess = {
 wordList = list(wordGuess.keys())
 wordAns = list(wordGuess.values()) 
 
-word = rd.choice(wordList)
-
 count = 3
+pointS = 0
 
-print(word)
 while count > 0:
-   
+
+    word = rd.choice(wordList)
+    print('\n', word)
+
     ask = input('Enter: ').lower()
     if ask == wordGuess[word]:
-        break
+        pointS += 1
     
     else:
-        count -= 1
-        print('You have',count,'chances')
-        print('Try again\n')
         
-        if count >= 2:
-            print(game.word(word))
-                               
+        print(game.hint(word))
+        
+        ask = input("Try Again: ")
+        if ask != word:
+            count -= 1
+                                                  
         else:
-            continue
+            pointS += 1 
 
-if count == 0:
-    print('YOU LOSE')
-    
-else:
-    print('YOU WIN')
+    if count < 1:
+        break
+
+    else:
+        pass
+     
+    ask = input('\nontinue playing?(Y/N): ').lower()
+    if ask == 'y':
+        continue
+
+    else:
+        break
+
+print("Points:", pointS)
